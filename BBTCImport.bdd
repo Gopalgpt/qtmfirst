@@ -1,0 +1,8 @@
+Feature: Ticket Booking
+  Scenario: Successful ticket booking
+    Given the user is on the ticket booking homepage
+    When the user selects a destination and travel date
+    And the user selects a preferred time and seat
+    And the user enters valid payment details
+    Then the ticket should be booked successfully
+    And a confirmation message with ticket details should be displayed
